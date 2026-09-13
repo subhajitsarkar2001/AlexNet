@@ -7,6 +7,7 @@ This project focuses on automated detection and classification of rice leaf dise
 The implementation is done using TensorFlow/Keras , and the model supports both CPU and CUDA (GPU) execution.
 
 Dataset:-
+
 Dataset Name: Rice Leaf disease Dataset Original 
 
 Platform: Google drive 
