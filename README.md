@@ -8,7 +8,9 @@ The implementation is done using TensorFlow/Keras , and the model supports both 
 
 Dataset:-
 Dataset Name: Rice Leaf disease Dataset Original 
+
 Platform: Google drive 
+
 Dataset URL:- https://drive.google.com/drive/folders/1757tAm3XomvaDW4nX6l07kAp91jCYzzX
     The project uses a labeled rice leaf image dataset containing 8 classes of healthy and diseased rice leaves
 
