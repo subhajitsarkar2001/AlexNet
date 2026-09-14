@@ -41,7 +41,6 @@ Dataset Structure
 Rice leaf disease Dataset/
 
     ├── Training Data/
-
     │   ├── Bacterial Leaf Blight/
     |   ├── Brown Spot/
     │   ├── Healthy Rice Leaf/
