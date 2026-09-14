@@ -192,9 +192,13 @@ Model Evaluation
 The trained AlexNet model was evaluated on the validation dataset using:
 
 1)Accuracy
+
 2)Precision
+
 3)Recall
+
 4)F1-score
+
 5)Confusion Matrix
 
 The repository also includes visualization of training and validation accuracy and loss across the training epochs.
