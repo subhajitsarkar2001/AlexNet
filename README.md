@@ -39,17 +39,29 @@ The images are organized into class-specific folders so that TensorFlow can auto
 Dataset Structure
 
 Rice leaf disease Dataset/
-├── Training Data/
-│   ├── Bacterial Leaf Blight/
-│   ├── Brown Spot/
-│   ├── Healthy Rice Leaf/
-│   ├── Leaf Blast/
-│   ├── Leaf scald/
-│   ├── Narrow Brown Leaf Spot/
-│   ├── Rice Hispa/
-│   └── Sheath Blight/
-│
-└── Validation data/
+
+    ├── Training Data/
+
+    │   ├── Bacterial Leaf Blight/
+
+    │   ├── Brown Spot/
+
+     │   ├── Healthy Rice Leaf/
+
+     │   ├── Leaf Blast/
+
+     │   ├── Leaf scald/
+
+     │   ├── Narrow Brown Leaf Spot/
+
+     │   ├── Rice Hispa/
+
+     │   └── Sheath Blight/
+
+     │
+
+     └── Validation data/
+   
     ├── Bacterial Leaf Blight/
     ├── Brown Spot/
     ├── Healthy Rice Leaf/
