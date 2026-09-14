@@ -220,12 +220,19 @@ GPU execution requires a compatible CUDA-enabled TensorFlow environment.
 How to Run
 
 1)Download or prepare the rice leaf dataset.
+
 2)Arrange the images according to the documented directory structure.
+
 3)Open the Phase 1 notebook.
+
 4)Update the dataset paths according to your local environment.
+
 5)Run the notebook cells sequentially.
+
 6)Train the AlexNet model.
+
 7)Evaluate the model using the validation dataset.
+
 8)The trained model will be saved as:
             rice_leaf_alexnet_model.keras
 
