@@ -15,11 +15,11 @@ The project uses a labeled rice leaf image dataset containing  8 classes  of hea
 
 **Dataset Source**
 
-Dataset Name: Rice Leaf disease Dataset Original 
+**Dataset Name:** Rice Leaf disease Dataset Original 
 
-Platform: Google drive 
+**Platform:** Google drive 
 
-Dataset URL:- https://drive.google.com/drive/folders/1757tAm3XomvaDW4nX6l07kAp91jCYzzX
+**Dataset URL:-** https://drive.google.com/drive/folders/1757tAm3XomvaDW4nX6l07kAp91jCYzzX
     
  The project uses a labeled rice leaf image dataset containing 8 classes of healthy and diseased rice leaves
 
