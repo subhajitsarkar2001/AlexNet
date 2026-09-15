@@ -34,7 +34,7 @@ The project uses a labeled rice leaf image dataset containing  8 classes  of hea
 - Rice Hispa
 - Sheath Blight
 
-  **Dataset Distribution**
+    **Dataset Distribution**
 
 | Dataset | Images | Classes |
 |--------|-------:|--------:|
@@ -43,7 +43,7 @@ The project uses a labeled rice leaf image dataset containing  8 classes  of hea
 
 The images are organized into class-specific folders so that TensorFlow can automatically assign class labels during dataset loading.
 
-Dataset Structure
+**Dataset Structure**
 
 The dataset follows the structure below:
 
