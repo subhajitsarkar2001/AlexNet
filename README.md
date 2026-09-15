@@ -23,7 +23,7 @@ The project uses a labeled rice leaf image dataset containing  8 classes  of hea
     
  The project uses a labeled rice leaf image dataset containing 8 classes of healthy and diseased rice leaves
 
-Classes:-
+**Classes**
 
 - Bacterial Leaf Blight
 - Brown Spot
