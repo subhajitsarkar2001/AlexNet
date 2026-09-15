@@ -179,7 +179,7 @@ Training was performed using a CUDA-enabled NVIDIA Tesla T4 GPU environment.
 
 The model was trained for 30 epochs.
 
-     Final Epoch Results
+   Final Epoch Results
 
      Metric	                  Result
      Training Accuracy	       79.72%
