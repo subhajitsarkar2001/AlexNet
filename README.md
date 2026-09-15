@@ -154,15 +154,24 @@ The images are loaded directly from their class folders using TensorFlow's image
 The dataset pipeline also uses prefetching with tf.data.AUTOTUNE to improve data-loading efficiency.
 
 **Training Configuration**
-Parameter	      Configuration
-Framework	      TensorFlow / Keras
-Input Size	      227 × 227
-Batch Size	       32
-Epochs	           30
-Optimizer	        Adam
-Learning Rate	    0.0001
-Loss Function	    Sparse Categorical Crossentropy
-Evaluation	        Validation Accuracy
+
+     Parameter	      Configuration
+
+     Framework	      TensorFlow / Keras
+
+     Input Size	      227 × 227
+
+     Batch Size	       32
+    
+      Epochs	           30
+
+     Optimizer	        Adam
+
+    Learning Rate	    0.0001
+
+    Loss Function	    Sparse Categorical Crossentropy
+
+    Evaluation	        Validation Accuracy
 
 Training was performed using a CUDA-enabled NVIDIA Tesla T4 GPU environment.
 
