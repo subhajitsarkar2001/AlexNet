@@ -34,7 +34,7 @@ The project uses a labeled rice leaf image dataset containing  8 classes  of hea
 - Rice Hispa
 - Sheath Blight
 
-- Dataset Distribution
+  **Dataset Distribution**
 
 | Dataset | Images | Classes |
 |--------|-------:|--------:|
@@ -45,7 +45,7 @@ The images are organized into class-specific folders so that TensorFlow can auto
 
 Dataset Structure
 
-Rice leaf disease Dataset/
+The dataset follows the structure below:
 
     ├── Training Data/
     │   ├── Bacterial Leaf Blight/
@@ -68,115 +68,117 @@ Rice leaf disease Dataset/
        └── Sheath Blight/
 
    
-Model Architecture
+**Model Architecture**
 
 The first phase uses a customized AlexNet-style convolutional neural network implemented with TensorFlow/Keras.
 
-Architecture Components
+**Architecture Components**
 
-Input image size: 227 × 227 × 3
+1)Input image size: 227 × 227 × 3
 
-Data augmentation
+2)Data augmentation
 
-Pixel normalization using rescaling
+3)Pixel normalization using rescaling
 
-5 convolutional layers
+4)5 convolutional layers
 
-Batch Normalization
+5)Batch Normalization
 
-Max Pooling layers
+6)Max Pooling layers
 
-Flatten layer
+7)Flatten layer
 
-Two fully connected layers with 4096 neurons each
+8)Two fully connected layers with 4096 neurons each
 
-Dropout regularization with rate 0.5
+9)Dropout regularization with rate 0.5
 
-Final Softmax classification layer
+10)Final Softmax classification layer
 
-Output classes: 8
+11)Output classes: 8
 
-Convolutional Configuration
+**Convolutional Configuration**
 
-Input: 227 × 227 × 3
+    Input: 227 × 227 × 3
 
 
-Data Augmentation
+     Data Augmentation
         ↓
-Rescaling (1/255)
+     Rescaling (1/255)
         ↓
-Conv2D: 96 filters, 11×11 kernel, stride 4
+    Conv2D: 96 filters, 11×11 kernel, stride 4
         ↓
-Batch Normalization
+    Batch Normalization
         ↓
-Max Pooling
+    Max Pooling
         ↓
-Conv2D: 256 filters, 5×5 kernel
+    Conv2D: 256 filters, 5×5 kernel
         ↓
-Batch Normalization
+    Batch Normalization
         ↓
-Max Pooling
+    Max Pooling
         ↓
-Conv2D: 384 filters, 3×3 kernel
+    Conv2D: 384 filters, 3×3 kernel
         ↓
-Conv2D: 384 filters, 3×3 kernel
+    Conv2D: 384 filters, 3×3 kernel
         ↓
-Conv2D: 256 filters, 3×3 kernel
+     Conv2D: 256 filters, 3×3 kernel
         ↓
-Max Pooling
+     Max Pooling
         ↓
-Flatten
+     Flatten
         ↓
-Dense: 4096
+    Dense: 4096
         ↓
-Dropout: 0.5
+    Dropout: 0.5
         ↓
-Dense: 4096
+    Dense: 4096
         ↓
-Dropout: 0.5
+    Dropout: 0.5
         ↓
-Softmax: 8 classes
+    Softmax: 8 classes
 
-Data Preprocessing and Augmentation
+**Data Preprocessing and Augmentation**
 
 To expose the network to variations in leaf orientation and appearance, the training pipeline applies the following augmentation operations:
 
-Random horizontal and vertical flipping
-Random rotation
-Random zoom
-Pixel value rescaling to the range used by the network
+1)Random horizontal and vertical flipping
+
+2)Random rotation
+
+3)Random zoom
+
+4)Pixel value rescaling to the range used by the network
 
 The images are loaded directly from their class folders using TensorFlow's image_dataset_from_directory utility.
 
 The dataset pipeline also uses prefetching with tf.data.AUTOTUNE to improve data-loading efficiency.
 
-Training Configuration
-Parameter	  Configuration
-Framework	   TensorFlow / Keras
-Input Size	    227 × 227
-Batch Size	     32
-Epochs	         30
-Optimizer	     Adam
-Learning Rate	 0.0001
-Loss Function	 Sparse Categorical Crossentropy
-Evaluation	      Validation Accuracy
+**Training Configuration**
+Parameter	      Configuration
+Framework	      TensorFlow / Keras
+Input Size	      227 × 227
+Batch Size	       32
+Epochs	           30
+Optimizer	        Adam
+Learning Rate	    0.0001
+Loss Function	    Sparse Categorical Crossentropy
+Evaluation	        Validation Accuracy
 
 Training was performed using a CUDA-enabled NVIDIA Tesla T4 GPU environment.
 
-Performance
+**Performance**
 
 The model was trained for 30 epochs.
 
+     Final Epoch Results
 
-
-Final Epoch Results
-Metric	               Result
-Training Accuracy	    79.72%
-Validation Accuracy	     69.35%
+     Metric	                  Result
+     Training Accuracy	       79.72%
+     Validation Accuracy	     69.35%
 
 The validation set contains 186 images across the eight rice leaf classes.
 
-Validation Classification Report
+**Validation Classification Report**
 
                         precision    recall  f1-score   support
 
@@ -193,7 +195,7 @@ Validation Classification Report
              macro avg       0.74      0.68      0.67       186
           weighted avg       0.74      0.69      0.69       186
 
-Model Evaluation
+**Model Evaluation**
 
 The trained AlexNet model was evaluated on the validation dataset using:
 
@@ -217,14 +219,14 @@ After training, the trained model was saved in Keras format:
 
 This saved model is subsequently used in Phase 2 for probability extraction and ensemble prediction.
 
-Requirements
+**Requirements**
 
 Install the required Python packages before running the notebook:
 
      pip install tensorflow numpy matplotlib seaborn scikit-learn
 GPU execution requires a compatible CUDA-enabled TensorFlow environment.
 
-How to Run
+**How to Run**
 
 1)Download or prepare the rice leaf dataset.
 
@@ -241,13 +243,13 @@ How to Run
 7)Evaluate the model using the validation dataset.
 
 8)The trained model will be saved as:
-            rice_leaf_alexnet_model.keras
+                    
+                    rice_leaf_alexnet_model.keras
 
+ **Author**
 
-Author
+**Subhajit Sarkar**
 
-Subhajit Sarkar
-
-Final Note
+**Final Note**
 
 This repository represents the AlexNet phase of the rice leaf disease detection project.The trained model and its probability outputs are later utilized in the second phase, where AlexNet is combined with ResNet-18 through a weighted ensemble approach.
