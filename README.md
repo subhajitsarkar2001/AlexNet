@@ -15,7 +15,7 @@ The project uses a labeled rice leaf image dataset containing  8 classes  of hea
 
 **Dataset Source**
 
-**Dataset Name:** Rice Leaf disease Dataset Original 
+**Dataset Name:** Dataset 
 
 **Platform:** Google drive 
 
