@@ -1,4 +1,4 @@
-Rice Leaf Disease Detection using Deep Learning
+**Rice Leaf Disease Detection using Deep Learning**
 
 Overview
 
