@@ -14,6 +14,7 @@ This repository contains phase 1 part of our project . A group of six members wo
 The project uses a labeled rice leaf image dataset containing  8 classes  of healthy and diseased rice leaves.
 
 **Dataset Source**
+
 Dataset Name: Rice Leaf disease Dataset Original 
 
 Platform: Google drive 
