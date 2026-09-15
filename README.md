@@ -163,7 +163,7 @@ The dataset pipeline also uses prefetching with tf.data.AUTOTUNE to improve data
 
      Batch Size	       32
     
-      Epochs	           30
+      Epochs	          30
 
      Optimizer	        Adam
 
