@@ -9,8 +9,10 @@ The implementation is done using TensorFlow/Keras , and the model supports both 
 
 This repository contains phase 1 part of our project . A group of six members worked in this project including me .In this phase ,all six of us just performed a comparative evaluation of six different CNN architectures where my role was to automatically identify and classify rice leaf diseases from leaf images using a customized AlexNet-based convolutional neural network.
 
-Dataset:-
+**Dataset**
 
+The project uses a labeled rice leaf image dataset containing  8 classes  of healthy and diseased rice leaves.
+**Dataset Source**
 Dataset Name: Rice Leaf disease Dataset Original 
 
 Platform: Google drive 
