@@ -163,11 +163,11 @@ The dataset pipeline also uses prefetching with tf.data.AUTOTUNE to improve data
 
      Batch Size	       32
     
-      Epochs	          30
+      Epochs	       30
 
-     Optimizer	        Adam
+     Optimizer	       Adam
 
-    Learning Rate	    0.0001
+    Learning Rate	   0.0001
 
     Loss Function	    Sparse Categorical Crossentropy
 
@@ -183,7 +183,7 @@ The model was trained for 30 epochs.
 
      Metric	                  Result
      Training Accuracy	       79.72%
-     Validation Accuracy	     69.35%
+     Validation Accuracy	   69.35%
 
 The validation set contains 186 images across the eight rice leaf classes.
 
