@@ -182,8 +182,8 @@ The model was trained for 30 epochs.
    Final Epoch Results
 
      Metric	                  Result
-     Training Accuracy	       79.72%
-     Validation Accuracy	   69.35%
+     Training Accuracy	      79.72%
+     Validation Accuracy	  69.35%
 
 The validation set contains 186 images across the eight rice leaf classes.
 
