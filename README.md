@@ -1,15 +1,15 @@
-##  **Rice Leaf Disease Detection using Deep Learning**
+##  **Rice Leaf Disease Detection using Deep Learning(Phase 1)**
 
 ## **Overview**
 
 This project focuses on automated detection and classification of rice leaf diseases using deep learning. A convolutional neural network was trained on labeled rice leaf images to classify multiple bacterial and fungal diseases, along with healthy leaves . The goal is to assist in early disease identification using image-based analysis.
 The implementation is done using TensorFlow/Keras , and the model supports both CPU and CUDA (GPU) execution.
 
-<u>**Objective**</u>
+## **Objective**
 
 This repository contains phase 1 part of our project . A group of six members worked in this project including me .In this phase ,all six of us just performed a comparative evaluation of six different CNN architectures where my role was to automatically identify and classify rice leaf diseases from leaf images using a customized AlexNet-based convolutional neural network.
 
-**Dataset**
+## **Dataset**
 
 The project uses a labeled rice leaf image dataset containing  8 classes  of healthy and diseased rice leaves.
 
@@ -23,7 +23,7 @@ The project uses a labeled rice leaf image dataset containing  8 classes  of hea
     
  
 
-**Classes**
+## **Classes**
 
 - Bacterial Leaf Blight
 - Brown Spot
@@ -34,7 +34,7 @@ The project uses a labeled rice leaf image dataset containing  8 classes  of hea
 - Rice Hispa
 - Sheath Blight
 
-    **Dataset Distribution**
+##   **Dataset Distribution**
 
 | Dataset | Images | Classes |
 |--------|-------:|--------:|
@@ -43,7 +43,7 @@ The project uses a labeled rice leaf image dataset containing  8 classes  of hea
 
 The images are organized into class-specific folders so that TensorFlow can automatically assign class labels during dataset loading.
 
-**Dataset Structure**
+## **Dataset Structure**
 
 The dataset follows the structure below:
 
@@ -68,11 +68,11 @@ The dataset follows the structure below:
        └── Sheath Blight/
 
    
-**Model Architecture**
+## **Model Architecture**
 
 The first phase uses a customized AlexNet-style convolutional neural network implemented with TensorFlow/Keras.
 
-**Architecture Components**
+## **Architecture Components**
 
 1)Input image size: 227 × 227 × 3
 
@@ -96,7 +96,7 @@ The first phase uses a customized AlexNet-style convolutional neural network imp
 
 11)Output classes: 8
 
-**Convolutional Configuration**
+## **Convolutional Configuration**
 
     Input: 227 × 227 × 3
 
@@ -137,7 +137,7 @@ The first phase uses a customized AlexNet-style convolutional neural network imp
         ↓
     Softmax: 8 classes
 
-**Data Preprocessing and Augmentation**
+## **Data Preprocessing and Augmentation**
 
 To expose the network to variations in leaf orientation and appearance, the training pipeline applies the following augmentation operations:
 
@@ -153,7 +153,7 @@ The images are loaded directly from their class folders using TensorFlow's image
 
 The dataset pipeline also uses prefetching with tf.data.AUTOTUNE to improve data-loading efficiency.
 
-**Training Configuration**
+## **Training Configuration**
 
      Parameter	      Configuration
 
@@ -175,7 +175,7 @@ The dataset pipeline also uses prefetching with tf.data.AUTOTUNE to improve data
 
 Training was performed using a CUDA-enabled NVIDIA Tesla T4 GPU environment.
 
-**Performance**
+## **Performance**
 
 The model was trained for 30 epochs.
 
@@ -204,7 +204,7 @@ The validation set contains 186 images across the eight rice leaf classes.
              macro avg       0.74      0.68      0.67       186
           weighted avg       0.74      0.69      0.69       186
 
-**Model Evaluation**
+## **Model Evaluation**
 
 The trained AlexNet model was evaluated on the validation dataset using:
 
@@ -228,14 +228,14 @@ After training, the trained model was saved in Keras format:
 
 This saved model is subsequently used in Phase 2 for probability extraction and ensemble prediction.
 
-**Requirements**
+## **Requirements**
 
 Install the required Python packages before running the notebook:
 
      pip install tensorflow numpy matplotlib seaborn scikit-learn
 GPU execution requires a compatible CUDA-enabled TensorFlow environment.
 
-**How to Run**
+## **How to Run**
 
 1)Download or prepare the rice leaf dataset.
 
@@ -255,10 +255,10 @@ GPU execution requires a compatible CUDA-enabled TensorFlow environment.
                     
                     rice_leaf_alexnet_model.keras
 
- **Author**
+## **Author**
 
 **Subhajit Sarkar**
 
-**Final Note**
+## **Final Note**
 
 This repository represents the AlexNet phase of the rice leaf disease detection project.The trained model and its probability outputs are later utilized in the second phase, where AlexNet is combined with ResNet-18 through a weighted ensemble approach.
