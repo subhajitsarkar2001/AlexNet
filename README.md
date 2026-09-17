@@ -23,7 +23,7 @@ The project uses a labeled rice leaf image dataset containing  8 classes  of hea
     
  
 
-## **Classes**
+ **Classes**
 
 - Bacterial Leaf Blight
 - Brown Spot
